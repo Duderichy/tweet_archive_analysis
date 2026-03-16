@@ -1,0 +1,21 @@
+[project]
+name = "tweet-analyzer"
+version = "0.1.0"
+description = "Analyze Twitter archive for insightful tweets and blog post ideas"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "click>=8.1.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+tweet-analyzer = "tweet_analyzer.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
