@@ -4,6 +4,15 @@ Find your most insightful tweets and identify blog post opportunities. Uses a tw
 
 ## Setup
 
+Using [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv venv
+uv pip install -e .
+```
+
+Or with standard Python:
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
